@@ -45,6 +45,7 @@ nav {
 .navbar-logo {
   height: 40px;
   margin-right: 1rem;
+  display: block;
 }
 
 /* Title */
@@ -128,16 +129,24 @@ nav {
   padding: 0 1rem;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 header{
   background-color: #D36135;
   text-align: center;
-  padding: 2rem
+  padding: 2rem;
 }
 
 main {
   background-color: #83BCA9;
   text-align: center;
   padding: 2rem;
+    /* spare space to fill and push footer down */
+  flex: 1 0 auto;
 }
 
 footer {
