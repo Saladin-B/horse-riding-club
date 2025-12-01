@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Beau+Rivage&family=Castoro+Titling&family=Gloock&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Macondo&family=Oswald:wght@200..700&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+
+.topbar {
+  width: 100%;
+  background: #3E5641;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;      /* Center the links horizontally */
+  gap: 2rem;                    /* Space between icons */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.topbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  transition: color 0.2s;
+}
+
+.topbar-link i {
+  font-size: 1.25em;
+}
+
+.topbar-link:hover {
+  color: #D36135;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  padding: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Logo */
+.navbar-logo {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+/* Title */
+.navbar-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: auto;
+  text-decoration: none;
+  padding: 0 1rem;
+  transition: color 0.2s;
+}
+
+/* Navbar links */
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  background: none;
+}
+
+.navbar li {
+  list-style: none;
+  position: relative;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar li a:hover {
+  background: #D36135;
+  border-radius: 0px;
+}
+
+/* Dropdown styles */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #444;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 150px;
+  z-index: 1000;
+}
+.dropdown-menu li a {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #444;
+  border-radius: 0;
+}
+.dropdown-menu li a:hover {
+  background: #555;
+}
+
+/* Hamburger Toggle for mobile */
+.navbar-toggle-checkbox {
+  display: none;
+}
+.navbar-toggle-label {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+header{
+  background-color: #D36135;
+  text-align: center;
+  padding: 2rem
+}
+
+main {
+  background-color: #83BCA9;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer {
+  background-color: #A24936;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* Responsive styles */
+@media (max-width: 700px) {
+  .navbar-title {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+  }
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    gap: 0;
+    padding: 0;
+    background: #444;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+  }
+  .navbar li {
+    width: 100%;
+  }
+  .navbar li a {
+    padding: 1rem;
+  }
+  .dropdown-menu {
+    position: static;
+    min-width: 100%;
+    background: #555;
+  }
+  .navbar-toggle-label {
+    display: block;
+  }
+  .navbar-toggle-checkbox:checked ~ .navbar {
+    display: flex;
+  }
+  /* Show dropdown on click for mobile */
+  .dropdown-menu {
+    display: none;
+  }
+  .dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Optional: Logo scaling for mobile */
+@media (max-width: 480px) {
+  .navbar-logo {
+    height: 30px;
+  }
+}
+
+/* Responsive: stack or shrink gap */
+@media (max-width: 700px) {
+  .topbar {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

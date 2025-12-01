@@ -1,27 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Horse Riding Club</title>
-</head>
-<body>
-    <!--Bootstrap JS script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-    <nav>
-  <ul class="navbar">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/booking-request">Booking Request</a></li>
-  </ul>
-</nav>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <h1>Horse Riding Club</h1>
-    <Header>Header</Header>
+    <link rel="stylesheet" href="assets\css\styles.css">
+    <title>Horse Riding Club</title>
+    <script src="https://kit.fontawesome.com/69a263b9cb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="topbar">
+        <a href="https://facebook.com/" class="topbar-link" title="Facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/" class="topbar-link" title="Instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com/" class="topbar-link" title="YouTube" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+    <nav>
+        <img src="logo.png" alt="Logo" class="navbar-logo">
+        <a href="index.html" class="navbar-title">Horse Riding Club</a>
+        <input type="checkbox" id="navbar-toggle" class="navbar-toggle-checkbox" />
+        <label for="navbar-toggle" class="navbar-toggle-label">&#9776;</label>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="booking-request.html">Booking Request</a></li>
+
+        </ul>
+    </nav>
+
+    <Header>
+        <!--Hero Slider Show Gallery-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/pexels-gustavo-fring-4894936.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/pexels-barbara-olsen-7883102.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/pexels-gustavo-fring-4894938.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+
+    </Header>
     <main>Main</main>
     <footer>Footer</footer>
+
+    <!--Bootstrap JS script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
