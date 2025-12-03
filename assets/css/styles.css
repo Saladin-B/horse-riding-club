@@ -213,6 +213,7 @@ main {
   align-items: center;
 }
 
+/* Align sections differently */
 .footer-section.left{
   align-items: flex-start;}
 
