@@ -1,5 +1,9 @@
+
+/* Import Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Beau+Rivage&family=Castoro+Titling&family=Gloock&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Macondo&family=Oswald:wght@200..700&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
 
+/* Topbar styles */
 .topbar {
   width: 100%;
   background: #3E5641;
@@ -7,8 +11,8 @@
   padding: 0.5rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;      /* Center the links horizontally */
-  gap: 2rem;                    /* Space between icons */
+  justify-content: space-evenly;  
+  gap: 2rem;                    
   font-size: 1rem;
   box-sizing: border-box;
 }
@@ -31,6 +35,7 @@
   color: #D36135;
 }
 
+/* Navbar styles */
 nav {
   display: flex;
   align-items: center;
@@ -95,7 +100,6 @@ nav {
 .dropdown:focus-within .dropdown-menu {
   display: block;
 }
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -130,6 +134,7 @@ nav {
   padding: 0 1rem;
 }
 
+/* General styles */
 h1,h2,h3{
   font-family: 'Aboreto', sans-serif;
 }
@@ -139,10 +144,32 @@ h1,h2,h3{
   justify-content: center;
 }
 
+.divider {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.divider::before, .divider::after {
+flex: 2;
+content: '';
+padding: 3px;
+background-color: #A24936;
+margin: 5px;
+width: 100vh;
+
+}
+
+hr.solid {
+  border-top: 3px solid #A24936;
+  margin: 1.5rem 0;
+}
+
 .sharped-corner{
   border-radius: 0px;
 }
 
+/* Layout styles */
 body {
   min-height: 100vh;
   display: flex;
@@ -154,7 +181,7 @@ header{
   text-align: center;
   padding: 2rem;
 }
-
+/* Make main take available space */
 main {
   background-color: #83BCA9;
   text-align: center;
