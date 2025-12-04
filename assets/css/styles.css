@@ -189,9 +189,16 @@ main {
     /* spare space to fill and push footer down */
   flex: 1 0 auto;
 }
+.section-divide {
+  background-color: #D36135;
+  width: 100vw;
+  padding: 2rem;
+  margin-left: -2rem;
+
+}
 
 /* About us section gallery grid */
-.row {
+y.row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
