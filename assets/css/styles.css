@@ -176,6 +176,12 @@ body {
   flex-direction: column;
 }
 
+.hide-list-style {
+  list-style: none;
+  padding: 0;
+
+}
+
 header{
   background-color: #D36135;
   text-align: center;
@@ -186,30 +192,36 @@ main {
   background-color: #83BCA9;
   text-align: center;
   padding: 2rem;
-    /* spare space to fill and push footer down */
+  
   flex: 1 0 auto;
 }
+/* Section divider styles */
 .section-divide {
   background-color: #D36135;
   width: 100vw;
   padding: 2rem;
   margin-left: -2rem;
+}
+
+.card{
+  width: 18rem;
+  margin: 2rem auto;
 
 }
 
 /* About us section gallery grid */
-y.row {
-  display: flex;
+.row {
+  display: flex; 
   flex-wrap: wrap;
   padding: 0 4px;
 }
 .column{
   flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+  max-width: 25%; /* Four columns */
+  padding: 0 4px; 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Responsive columns */
-  gap: 1rem;
+  gap: 1rem; /* Space between images */
 }
 .column img{
   margin-top: 8px;

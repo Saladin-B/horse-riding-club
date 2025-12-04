@@ -20,7 +20,7 @@
 
 <body>
 
-  <!-- Top bar with social media links -->
+  <!-- Top bar with social media links used with Copilot --> 
 
   <div class="topbar">
     <a href="https://facebook.com/" class="topbar-link" title="Facebook" target="_blank">
@@ -34,7 +34,7 @@
     </a>
   </div>
 
-  <!-- Navigation bar -->
+  <!-- Navigation bar with Copilot -->
   <nav>
     <span class="navbar-title">Horse Riding Club</span>
     <input type="checkbox" id="navbar-toggle" class="navbar-toggle-checkbox" />
@@ -58,7 +58,8 @@
 
       <!-- Booking Request Form -->
 
-      <div class="container d-flex justify-content-center align-items-center">
+      <!-- Centering the form -->
+      <div class="container d-flex justify-content-center align-items-center"> 
         <form id="booking-request" method="POST" action="https://formdump.codeinstitute.net" class="w-100"
           style="max-width: 500px;">
 
@@ -66,25 +67,29 @@
           <div class="divider">Details</div>
 
           <!--Personal Information-->
+
+          <!-- First Name -->
           <div class="mb-3">
             <label for="firstName" class="form-label text-start w-100">First Name</label>
-            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your First Name"
+            <input type="text" class="form-control" id="firstName" name="firstName" autocomplete="on" placeholder="Your First Name"
               required>
           </div>
-
+          <!-- Last Name -->
           <div class="mb-3">
             <label for="lastName" class="form-label text-start w-100">Last Name</label>
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your Last Name" required>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your Last Name" autocomplete="on" required>
           </div>
 
+          <!-- Email -->
           <div class="mb-3">
             <label for="email" class="form-label text-start w-100">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" autocomplete="on" required>
           </div>
 
+          <!-- Phone Number -->
           <div class="mb-3">
             <label for="phone" class="form-label text-start w-100">Phone Number</label>
-            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number" autocomplete="on" required>
           </div>
 
           <!-- Date & Time Section -->
@@ -93,7 +98,9 @@
             <label for="bookingDate" class="form-label text-start w-100">Booking Date:</label>
             <input type="date" class="form-control" id="bookingDate" name="bookingDate" required>
           </div>
-          <div class="mb-3 mt-3">
+
+          <!-- Added margin top for spacing -->
+          <div class="mb-3 mt-3"> 
             <label for="bookingTime" class="form-label text-start w-100">Booking Time:</label>
             <input type="time" class="form-control" id="bookingTime" name="bookingTime" required>
           </div>

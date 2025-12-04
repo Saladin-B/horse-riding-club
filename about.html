@@ -13,6 +13,8 @@
 
 </head>
 
+<!--Body-->
+
 <body>
 
     <div class="topbar">
@@ -38,41 +40,46 @@
 
         </ul>
     </nav>
-
+    <!--Header-->
     <Header>
         <div>
             <h2 class="display-5">About Us</h2>
         </div>
     </Header>
+    <!--Main Content-->
     <main>
+        <!--Mission lists-->
         <section>
             <h2>Our Mission</h2>
-            <div></div><ul>
-            <li>Bringing technology to connect, support and sustain wildlife.</li>
-            <li>Provide opportunities to everyone at all different levels.</li>
-            <li>Making better routes for riders and arenas.</li>
-            <li>Protecting the environment to promote well-being.</li>
-            <li>Engage in teamwork and facilitate growth.</li>
-            </ul>
+            <div>
+                <ul id="center"> <!-- Centered list -->
+                    <li>Bringing technology to connect, support and sustain wildlife.</li>
+                    <li>Provide opportunities to everyone at all different levels.</li>
+                    <li>Making better routes for riders and arenas.</li>
+                    <li>Protecting the environment to promote well-being.</li>
+                    <li>Engage in teamwork and facilitate growth.</li>
+                </ul>
             </div>
         </section>
         <section>
             <h2>Our History</h2>
-            <p>Founded in 2005, the Horse Riding Club has been dedicated to promoting equestrian sports and
+            <p>Founded in 2025, the Horse Riding Club has been dedicated to promoting equestrian sports and
                 fostering a community of horse lovers.</p>
         </section>
+
+        <!--Gallery used Bootstrap-->
         <section>
             <div class="section-divide">
                 <h2>Gallery</h2>
-                </div>
-                <div class="w-100 my-3"></div>
-                
+            </div>
+            <div class="w-100 my-3"></div> <!-- Clearfix for new row -->
             </div>
             </div>
-            <div class="row">
-                <div class="column">
+            <div class="row"> <!-- Added row class for grid layout -->
+                <div class="column"> <!-- Added column class for grid layout -->
                     <img src="assets/images/pexels-raquel-elise-de-moraes-111613202-9701113.jpg"
                         class="img-fluid rounded" alt="Riding Lesson" loading="lazy">
+                    <!-- Lazy loading for performance -->
                 </div>
                 <div class="column">
                     <img src="assets/images/handsome-man-standing-ranch.jpg" class="img-fluid rounded" alt="Horse Care"
@@ -104,27 +111,72 @@
                         loading="lazy">
                 </div>
                 <div class="w-100 my-3"></div>
-            </div>
         </section>
         <section>
+            <!--title for services-->
             <div class="section-divide">
                 <h2>Services We Provide</h2>
             </div>
-        </section>
-    </main>
+            <!--cards section-->
 
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="assets\images\horse-jumping-4372601.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lunge</h5>
+                            <p class="card-text">Lunge training for all levels, one-to-one lesson with instructor in the arena.
+                12 lunges per session, before going solo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Group Lessons</h5>
+                            <p class="card-text">Lunge training for all levels, one-to-one lesson with instructor in the arena.
+                12 lunges per session, before going solo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Forest Hacks</h5>
+                            <p class="card-text">Lunge training for all levels, one-to-one lesson with instructor in the arena.
+                12 lunges per session, before going solo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pony Rides</h5>
+                            <p class="card-text">Lunge training for all levels, one-to-one lesson with instructor in the arena.
+                12 lunges per session, before going solo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!--Footer-->
     <footer class="footer">
         <section class="footer-sections">
-            <div class="footer-section left">
+            <div class="footer-section left"> <!-- Added left section -->
                 <ul class="list-unstyled">
                     <li><strong>Address:</strong> 10 Knight St, Cavalry City, IG10 4RW</li>
                 </ul>
             </div>
-            <div class="footer-section center">
+            <div class="footer-section center"> <!-- Added center section -->
                 <p>&copy; 2025 Horse Riding Club. All rights reserved.</p>
                 <p>Saladin</p>
             </div>
-            <div class="footer-section right">
+            <div class="footer-section right"> <!-- Added right section -->
                 <ul class="list-unstyled">
                     <li><strong>Email:</strong> info@horseridingclub.com</li>
                     <li><strong>Phone:</strong> +44 123 456 7890</li>
@@ -138,5 +190,6 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
+
 
 </html>
