@@ -150,6 +150,14 @@ h1,h2,h3{
   align-items: center;
 }
 
+#missions{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem
+}
+
 .divider::before, .divider::after {
 flex: 2;
 content: '';
@@ -171,15 +179,29 @@ hr.solid {
 
 /* Layout styles */
 body {
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.hide-list-style {
+/* Hide list styles */
+#hide-list-style {
   list-style: none;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
+}
 
+/* Ensure child items also hide markers across browsers */
+#hide-list-style li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#hide-list-style li::marker {
+  content: '';
 }
 
 header{
@@ -206,7 +228,11 @@ main {
 .card{
   width: 18rem;
   margin: 2rem auto;
-
+  display: flex;
+}
+.card-img-top{
+  height: 200px;
+  object-fit: cover;
 }
 
 /* About us section gallery grid */
@@ -232,6 +258,28 @@ main {
   display: block;
 }
 
+.circle{
+  --circle-size: 60px;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  border: 2px solid #A24936;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  background: transparent;
+}
+
+.circle p {
+  margin: 0;
+  padding: 0.25rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+}
 /* Footer styles */
 .footer {
   background: #A24936;
@@ -243,7 +291,7 @@ main {
 .footer-sections {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -253,6 +301,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 /* Align Footer sections differently */
