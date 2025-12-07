@@ -285,6 +285,8 @@ main {
   border-radius: 8px;
 }
 
+/* Button styles */
+
 .btn.button1 {
  background: #3e5641;
  color: #fff;
@@ -304,6 +306,7 @@ main {
  border: 2px solid #333;
 }
 
+/* Circle styles */
 .circle{
   --circle-size: 60px;
   width: var(--circle-size);
@@ -369,7 +372,6 @@ main {
 .footer strong {
   font-weight: 600;
 }
-
 
 /* Responsive styles */
 @media (max-width: 700px) {
